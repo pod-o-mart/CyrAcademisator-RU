@@ -1,0 +1,112 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+.bericht {
+font-family: 'Old Standard TT';
+font-weight: normal;
+font-style: normal;
+font-size:16px;
+text-align: center;
+}
+
+textarea {
+font-family: 'Old Standard TT';
+font-weight: normal;
+font-style: normal;
+font-size:1.5em !important;
+width:100%;
+max-height:50%;
+}
+ 
+.keyboardInput {
+font-family: 'Old Standard TT';
+font-weight: normal;
+font-style: normal;
+font-size:1.5em !important;
+line-height:1.5em;
+width:100%;
+}
+ 
+#knopf {
+float:left;
+margin-top:5px;
+}
+
+#grau {
+background-color:#eee;
+border:1px solid #666;
+padding:0px;
+margin:0px;
+}
+ 
+#grau:focus {
+background-color:#fff;
+}
+
+#berichttexte {
+background-color:#dedede;
+border:2px solid grey;
+margin:0 15px 0 15px;
+padding:15px;
+font-family: 'Old Standard TT';
+font-weight: normal;
+font-style: normal;
+font-size:18px;
+}
+
+#berichttexte2 {
+background-color:#dedede;
+border: 2px solid grey;
+border-top: 0;
+margin:0 15px 15px 15px;
+padding:5px; 
+}
+
+.absenden {
+font-family: Arial, sans;
+font-weight: normal;
+font-style: normal;
+font-size:14px;
+width:auto;
+}
+
+.box {
+padding:0px;
+margin:0px;
+}
+ 
+.keyboardInputInitiator {
+margin:0px 3px;
+vertical-align:middle;
+cursor:pointer;
+float:right;
+}
+
+#ext-gen2 {
+z-index:0 !important;
+}
+
+#laden{
+position: absolute;
+float:right;
+width: 32px !important;
+height: 32px !important;
+display: none;
+background-image: url("laden.gif");
+margin:5px 0 0 5px;
+}
+
+#hinweis1, #hinweis2, #hinweis3, #hinweis-ein-auto, #hinweis-ein-kyrillisch, #hinweis-ein-isor9, #hinweis-ein-iso9, #hinweis-ein-gost779b, #hinweis-ein-wissenschaftlich, #hinweis-ein-alalc, #hinweis-ein-british, #hinweis-ein-translit, #hinweis-aus-kyrillisch, #hinweis-aus-isor9, #hinweis-aus-iso9, #hinweis-aus-gost779b, #hinweis-aus-wissenschaftlich, #hinweis-aus-alalc, #hinweis-aus-british, #hinweis-aus-translit, #hinweis-aus-bgndigr, #hinweis-aus-bgn, #hinweis-duden, #hinweis-sprognaevn {
+position: relative;
+top: 0px;
+width: 120px;
+padding:5px 0 5px 0;
+margin:5px 0 5px 0;
+color: black;
+display: none;
+}
+
+form[name="languagepicker"] {
+max-width: max-content;
+display: inline-flex;
+float: right;
+}

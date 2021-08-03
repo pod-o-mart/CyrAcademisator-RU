@@ -1,0 +1,1488 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CyrAcademisator-RU – Dokumentation Deutsch</title>
+    <meta name='author' content='Martin Podolak'>
+    <meta name='description' content='Deutsche Dokumentation für CyrAcademisator-RU.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://slavonic.github.io/css/fonts.css" type="text/css">
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div style="margin:15px;">
+<p style="text-align: justify;"><strong><em>CyrAcademisator</em></strong> ist ein Transliterationswerkzeug für russische Texte.</p>
+<p style="text-align: justify;">Insbesondere für akademischen Gebrauch an Universität und in Forschung ausgelegt, ermöglicht <em>CyrAcademisator </em>eine schnelle Konvertierung russischer Texte in die gängigsten wissenschaftlichen Transliterationen. Eine Rückübertragung ins Kyrillische ist ebenso möglich wie die Konversion von einer Transliteration in eine andere. Altkirchenslavische und altrussische Buchstaben werden berücksichtigt und können mit einer virtuellen Tastatur eingegeben werden.</p>
+<hr id="system-readmore" />
+<p>Bitte zu beachten, dass diese Dokumentation für das Transliterationswerkzeug für <em>Russisch</em> ausgelegt ist, welches sich von <em>CyrAcademisator für Altkirchenslavisch</em> in einigen Punkten unterscheidet.
+<div style="float: left;">
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a href="#allgemeines">Allgemeines</a><br /><a href="#benutzung">Benutzung</a><br /><a href="#fonts">Anzeige und Fonts</a><br /><a href="#werkzeuge">Werkzeuge</a><br /><a href="#problembehebung">Problembehebung</a><br /></span></p>
+<h4><span style="font-family: arial,helvetica,sans-serif;">Anmerkungen zu den einzelnen Transliterationen</span></h4>
+<p style="text-align: left;"><span style="font-family: arial,helvetica,sans-serif;"><a href="#isor9">ISO R/9</a><br /><a href="#iso9">ISO 9 / GOST 7.79A</a><br /><a href="#gost779">GOST 7.79B</a><br /><a href="#wissenschaftlich">Wissenschaftlich</a><br /><a href="#alalc">ALA-LC</a><br /><a href="#translit">Translit</a><br /><a href="#duden">Duden</a><br /><a href="#sprognaevn">Dansk Sprognævn</a><br /></span></p>
+<span style="font-family: arial,helvetica,sans-serif;"><a href="#feedback">Fragen &amp; Feedback</a><br /></span></div>
+<div style="border: 1px dashed #424d52; margin: 0pt 0pt 15px 15px; padding: 5px; float: right;">
+<h3><span style="font-family: arial,helvetica,sans-serif;">Was CyrAcademisator kann:</span></h3>
+<ul>
+<li><span style="font-family: arial,helvetica,sans-serif;">Russische Texte transliterieren</span></li>
+<li><span style="font-family: arial,helvetica,sans-serif;">Zwischen verschiedenen russischen<br />Transliterationen konvertieren</span></li>
+<li><span style="font-family: arial,helvetica,sans-serif;">Transliterierte Texte nach Russisch konvertieren</span></li>
+<li><span style="font-family: arial,helvetica,sans-serif;">Kirchenslavische Buchstaben verarbeiten<br /></span></li>
+<li><span style="font-family: arial,helvetica,sans-serif;">Transliterationen individuell<br />anpassen (s. erweiterte Einstellungen)<br /></span></li>
+</ul>
+<h3><span style="font-family: arial,helvetica,sans-serif;">Was CyrAcademisator <span style="text-decoration: underline;">nicht</span> kann:</span></h3>
+<ul>
+<li><span style="font-family: arial,helvetica,sans-serif;">Mit kyrillischen Buchstaben anderer Sprachen umgehen<br />(<span style="text-decoration: underline;">nur</span>Russisch und <span style="text-decoration: underline;">Altkirchenslavisch)</span></li>
+<li><span style="font-family: arial,helvetica,sans-serif;">Zeichenkodierungen für die EDV konvertieren</span></li>
+<li><span style="font-family: arial,helvetica,sans-serif;">Falsch dargestellte Zeichen dechiffrieren<br /></span></li>
+</ul>
+</div>
+<div style="clear: both;"> </div>
+<h3 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="allgemeines"></a>Allgemeines<br /></span></h3>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;">CyrAcademisator ist ausdrücklich nur zur Arbeit mit der russischen Sprache konzipiert. Kyrillische Buchstaben anderer Sprachen, die im modernen Russischen oder in der russischen Sprachgeschichte keine Relevanz haben, wurden, ebenso wie ggf. abweichende Transliterationen in anderen Sprachen, nicht berücksichtigt.</span></p>
+<h3 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="benutzung"></a>Benutzung</span></h3>
+<p style="text-align: justify;">Nach der Eingabe eines zu konvertierenden Textes und der Festlegung des gewünschten Zielformats auf den Knopf „Transliteration“ klicken.</p>
+<p style="text-align: justify;">Auf der danach erscheinenden Seite wird im oberen Fenster das Ergebnis angezeigt, im unteren der zuvor eingegebene Quelltext.</p>
+<h5 style="text-align: justify;"><strong>Zieltext</strong></h5>
+<p style="text-align: justify;">Um einen Text zu konvertieren, <em>muss </em>in allen Fällen die <em>Zieltransliteration </em> angegeben werden. Dies wird unter dem Eingabefeld im <em>rechten </em>Auswahlmenü festgelegt.</p>
+<h5 style="text-align: justify;"><strong>Eingabetext: automatische Erkennung</strong></h5>
+<p style="text-align: justify;">Als Voreinstellung versucht CyrAcademisator die Form des eingegebenen Texts automatisch zu erkennen, also ob es sich um einen kyrillischen Text, oder um eine (und wenn ja, welche) Transliteration handelt. Bei Problemen sie <a href="#problembehebung">Problembehebung</a></p>
+<h5 style="text-align: justify;"><strong>Eingabetext: manuelle Auswahl</strong></h5>
+<p style="text-align: justify;">Zudem <em>kann </em>die Form des zu konvertierenden Texts manuell angegeben werden, also ob der eingegebene Text Kyrillisch oder eine Transliteration (z.B. ISO-R9, ALA-LC etc.) ist. Diese Einstellung wird unter dem Eingabefeld im <em>linken </em>Auswahlmenü festgelegt.</p>
+<h3 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="fonts"></a>Anzeige und Fonts</span></h3>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;">CyrAcademisator benutzt einen eingebetteten Font, weshalb alle kirchenslavische und diakritische Zeichen angezeigt werden. Nach dem Kopieren aus CyrAcademisator in ein anderes Programm werden dort möglicherweise nicht mehr alle Buchstaben korrekt angezeigt. Dies lässt sich beheben, indem ein zusätzlicher Font lokal auf dem Rechner installiert und für den Text wird, ich empfehle hier einen der Fonts des <a href="https://sci.ponomar.net/fonts.html">Ponomar Projekts</a>.</p>
+<h3 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="werkzeuge"></a>Werkzeuge</span></h3>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;">Nicht alle Werkzeuge funktionieren in jedem Browser, einige Funktionen benötigen JavaScript oder Cookies. Die Transliterations-Grundfunktion von CyrAcademisator funtkioniert aber immer.</span></p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;">Virtuelle Tastatur<br /></span></h4>
+<p style="text-align: justify;"><span><img src="https://pod-o-mart.github.io/keyboardBookmarklets/keyboard.png" border="0" width="28" height="13" style="float: left; margin-left: 5px; margin-right: 5px;" />Die virtuelle Tastatur zur Eingabe kyrillischer Buchstaben öffnet sich beim Anklicken dieses Symbols. <em>Quelle:</em> <a href="http://www.greywyvern.com/code/javascript/keyboard" target="_blank">JavaScript Graphical/Virtual Keyboard Interface</a>.</span></p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;">Erweiterte Einstellungen</span></h4>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;">In den erweiterten Einstellungen können Ein- und Ausgabe gemäß bekannter Ausnahmen und Varianten modifiziert werden. <br style="font-family: arial,helvetica,sans-serif;" /></span></p>
+<h3 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="problembehebung"></a>Problembehebung<br /></span></h3>
+<table style="width: 100%; border: 0pt solid #000000;" border="0" frame="border" rules="all" cellspacing="0" cellpadding="4">
+<tbody>
+<tr><th style="border: 1px solid #000000;"><strong>Fehler</strong></th><th style="border: 1px solid #000000;"><strong>Mögliche Ursache</strong></th><th style="border: 1px solid #000000;"><strong>Lösung</strong></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Der eingegebene Text ist eine Transliteration, wird aber als Kyrillisch erkannt</td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Der Eingabetext beinhaltet mindestens 1 kyrillischen Buchstaben</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Eingabetext manuell im unteren Fenster auswählen und erneut transliterieren</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Der Eingabetext wird nicht erkannt, stattdessen wird „unbestimmt“ angezeigt</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Dies ist kein Fehler. Der Eingabetext besteht ausschließlich aus Buchstaben, die in allen Transliterationsschemata gleich sind, weshalb der Text konvertiert werden konnte.</td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Die Konvertierung ist korrekt</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Text wurde korrekt konvertiert, aber falsch erkannt (Quelle z.B. als wissenschaftlich statt als ISO R/9)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Einige Transliterationsschemata sind in weiten Teilen gleich (insbesondere ISO R/9 und wissenschaftlich, teilweise die anderen ebenfalls)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Die Konvertierung ist korrekt, das erwartete Transliterationsschema ist in Falle dieser Eingabe kongruent mit dem von CyrAcademisator verwendeten Schema</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="5" colspan="1" align="" valign="">Text wurde falsch konvertiert</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Die eingegebene Transliteration wird nicht unterstützt (gilt auch für ALA-LC <em>ohne </em>Diakritika)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="2" colspan="1" align="" valign="">Text kann nicht korrekt konvertiert werden</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Der eingegebene Text ist nicht Russisch. CyrAcademisator unterstützt <em>nur </em>Russisch</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Der eingegebene Text ist keine korrekte Transliteration oder ist eine Mischung verschiedener Transliterationen</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Eingabetext überprüfen</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" colspan="1" align="" valign="">Der eingegebene Text ist eine Transkription</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" colspan="1" align="" valign="">Text kann nicht korrekt konvertiert werden. Transkriptionen können nur als Ziel definiert werden, nicht als Quelle</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Fehler von CyrAcademisator</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Bitte um eine <a href="#feedback">Mitteilung</a> an den Administrator</td>
+</tr>
+</tbody>
+</table>
+<h3> </h3>
+<h3><span style="font-family: arial,helvetica,sans-serif;">Anmerkungen zu den einzelnen Transliterationen<br /></span></h3>
+<h4><span style="font-family: arial,helvetica,sans-serif;"><a name="isor9"></a>ISO R/9</span></h4>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Erweiterte Einstellungen:</strong> Ein- und Ausgabe</span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;">Es kann zudem von einer ISO R/9-Variante in eine andere konvertiert werden (Von: ISO R/9 - Nach: ISO R/9 + Erweiterte Einstellungen).</span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Merkmale:</strong> Standard von 1968. Erlaubt mehrere Ausnahmen bzw. Varianten. Altkirchenslavische Buchstaben orientieren sich in CyrAcademisator aufgrund fehlender Standardisierung an der wissenschaftlichen Transliteration. Russisch-Kirchenslavisch (moderne Aussprache) und Altkirchenslavisch werden verschieden transliteriert (siehe erweiterte Einstellungen).</span></p>
+<table id="cyrtab" style="border: 0pt solid #000000; text-align: left; font-family: Monomakh!important; width: 100%;" border="0" frame="border" rules="all" cellspacing="0" cellpadding="4">
+<tbody>
+<tr id="" style="padding: 2px; font-size: 12px;" lang="" dir="" align="center" valign="middle" bgcolor=""><th id="" style="border: 1px solid #000000;" lang="" dir="" scope="col" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">Modernes Russisch</span></span></strong></th><th style="border: 1px solid #000000;"><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">Eingabe</span></span></strong></th><th style="border: 1px solid #000000;"><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">Ausgabe</span></span></strong></th><th style="border: 1px solid #000000;" rowspan="34" colspan="1"><span style="font-size: small;"> </span></th><th style="border: 1px solid #000000;"><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">Vor 1918<br /></span></span></strong></th><th style="border: 1px solid #000000;"><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">Eingabe</span></span></strong></th><th style="border: 1px solid #000000;"><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">Ausgabe</span></span></strong></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">А</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">І, Ї</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ī, ï</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ī, ï</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Б</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѣ (Ꙓ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ě</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ě</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">В</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѳ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ḟ</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ḟ</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Г</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѵ (Ѷ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẏ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẏ<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Д</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="1" colspan="3" align="" valign=""> </td>
+</tr>
+<tr id="" lang="" dir="" align="center" valign="middle" bgcolor="">
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign="">Е</td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+<th id="" style="border: 1px solid #000000;" lang="" dir="" scope="col" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Kirchenslavisch </strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ё</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ë</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ë</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙗ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ya]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ж</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ž</span> [zh]</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ž</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [zh]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">З</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙃ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">И</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѕ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">dz</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Й</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span>, ĭ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ĭ]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѹ (Ꙋ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u<br /> </span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">К</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѡ (Ѻ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ô</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ô</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [o]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Л</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Є</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">М</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѥ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">je</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ye]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Н</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѧ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ę</span></span></strong><span style="font-family: arial,helvetica,sans-serif;">, ẽ</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ę, ya]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">О</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѩ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ję</span></span></strong><span style="font-family: arial,helvetica,sans-serif;">, yẽ</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ję, ya, yę]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">П</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѫ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ǫ</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;">, õ</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ǫ]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Р</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѭ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">jǫ</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;">, yõ</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [jǫ, yǫ]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">С</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѯ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ks</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Т</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">t</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">t</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѱ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ps</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">У</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѿ (Ѿ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ôt</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ф</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ҁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">90</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Х</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">h</span></span></strong><span style="font-family: arial,helvetica,sans-serif;">, ch [kh]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ch</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [h, kh] </span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">[ Щ ]</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">[št, sht]</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">[št, sht]</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ц</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">c</span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ts]</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">c</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ts] </span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="10" colspan="3" align="" valign=""><span style="font-size: small;"><span style="font-family: Helvetica,Arial,sans-serif; font-weight: bold;">Legende</span><br /></span>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><span style="font-weight: bold;">fett</span></span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Standard. Alternativ können kommagetrennte Buchstaben ohne weitere Einstellungen verwendet werden</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">(...)</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Variante desselben Buchstabens</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">[...]</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Kann in den erweiterten Einstellungen festgelegt werden</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">-</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Rücktransliteration ins Kyrillische nicht möglich</span></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ч</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">č</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ch]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">č</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ch]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ш</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">š</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [sh]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">š</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [sh]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Щ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">šč</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [shch]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">šč</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [shch]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ъ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ы</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ь</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Э</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ė</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ė</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ю</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ju</span></span></strong><span style="font-family: arial,helvetica,sans-serif;">, yu</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ju</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [yu]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Я</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong><span style="font-family: arial,helvetica,sans-serif;">, ya</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ya]</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="iso9"></a>ISO 9 / GOST 7.79A</span></h4>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Erweiterte Einstellungen:</strong> nicht möglich<br /></span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Merkmale:</strong> Standard aus dem Jahre 2000. GOST und ISO sind in diesem Falle gleich. Jeder moderne kyrillische Buchstabe ist exakt einem lateinischen zugeordnet. Der Standard umfasst unterschiedslos alle mit kyrillischen Buchstaben geschriebenen Sprachen. Kirchenslavische Buchstaben sind nur definiert, wenn sie in einer modernen Sprache Anwendung finden.</span></p>
+<table id="cyrtab" style="border: 1px solid #000000; text-align: left; font-family: Monomakh!important; width: 100%;" border="1" frame="border" rules="all" cellspacing="0" cellpadding="4">
+<tbody>
+<tr id="" style="padding: 2px; font-size: 12px;" lang="" dir="" align="center" valign="middle" bgcolor=""><th style="padding: 5px;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Modernes Russisch</strong></span></span></th><th style="padding: 5px;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Transliteration</strong></span></span></th><th style="padding: 5px;" scope="col" rowspan="34" colspan="1"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"> </span></span></th><th style="font-family: Helvetica,Arial,sans-serif;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Vor 1918</strong><br /></span></span></th><th style="padding: 5px;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="padding: 5px;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">А</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">І / Ї</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ì / ï</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ì / ï</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Б</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѣ (Ꙓ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ě</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ě</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">В</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѳ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">f̀</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">f̀ </span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Г</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѵ (Ѷ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ỳ</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ỳ </span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Д</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="1" colspan="3" align="" valign=""> </td>
+</tr>
+<tr id="" lang="" dir="" align="center" valign="middle" bgcolor="">
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign="">Е</td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+<th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Kirchenslavisch </strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ё</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ë</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙗ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">â</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ж</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ž</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẑ</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">З</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙃ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">И</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѕ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẑ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẑ</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Й</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѹ (Ꙋ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u<br /> </span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">К</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѡ (Ѻ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ō</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ō</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Л</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Є</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ê</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ê</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">М</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѥ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Н</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѧ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">â</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">â</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">О</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѩ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">â</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">П</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѫ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ǎ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ǎ</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Р</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѭ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">û</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">û</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">С</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѯ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ks</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Т</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">t</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѱ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ps</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">У</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѿ (Ѿ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ot</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ф</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ҁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">90</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Х</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">h</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="11" colspan="3" align="" valign="">
+<p><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><span style="font-weight: bold;">Legende</span></span></span></p>
+<p><span style="font-size: small;"><span style="font-family: arial,helvetica,sans-serif;">- = Transliteration ins Kyrillische nicht möglich, da nicht standardisiert</span><br /></span></p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ц</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">c</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ч</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">č</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ш</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">š</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Щ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ŝ</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ъ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ы</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ь</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Э</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">è</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ю</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">û</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Я</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">â</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="gost779"></a>GOST 7.79B</span></h4>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Erweiterte Einstellungen:</strong> nicht möglich</span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Merkmale:</strong> Der Standard verzichtet auf diakritische Zeichen, muss dafür einige Buchstaben mit mehreren lateinischen Buchstaben wiedergeben. Kirchenslavisch wird ausschließlich nach moderner Aussprache als Russisch-Kirchenslavisch transliteriert.</span></p>
+<table id="cyrtab" style="border: 0pt solid #000000; text-align: left; font-family: Monomakh!important; width: 100%;" border="0" frame="border" rules="all" cellspacing="0" cellpadding="4">
+<tbody>
+<tr id="" style="padding: 2px; font-size: 12px;" lang="" dir="" align="center" valign="middle" bgcolor=""><th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Modernes Russisch</strong></span></span></th><th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Transliteration</strong></span></span></th><th style="font-weight: bold; border: 1px solid #000000;" scope="col" rowspan="34" colspan="1"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"> </span></span></th><th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Vor 1918</strong><br /></span></span></th><th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">А</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">І / Ї</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>-<br /></strong></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">i</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Б</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѣ (Ꙓ)</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ye<br /></span></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ye</span><br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">В</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѳ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>fh</strong><br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">fh<br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Г</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѵ (Ѷ)</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>yh</strong><br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">yh<br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Д</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" rowspan="1" colspan="3" align="" valign=""> </td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Е</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+<th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Kirchenslavisch </strong></span></span></th><th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="font-weight: bold; border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ё</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">yo</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙗ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>ya</strong><br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ж</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">zh<br /></span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙁ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">z<br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">З</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙃ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-</span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">s<br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">И</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong><span style="font-family: arial,helvetica,sans-serif;"> (i')</span><strong><span style="font-family: arial,helvetica,sans-serif;"><br /></span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѕ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>-</strong><br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">s<br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Й</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span><br /></span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѹ (Ꙋ)</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u<br /> </span></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">К</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѡ (Ѻ)</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>-</strong><br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>o</strong><br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Л</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Є</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>-</strong><br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>e</strong><br /></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">М</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѥ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>e</strong></span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Н</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѧ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><strong>-</strong><br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ya</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">О</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѩ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-</span></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ya</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">П</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѫ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">o'</span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">o'</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Р</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѭ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-</span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">yu</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">С</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѯ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ks</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Т</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">t</span></span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѱ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-</span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ps</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">У</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѿ (Ѿ)</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-</span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">ot</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ф</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ҁ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">-</span></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">90</span></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Х</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">x<br /></span></span></strong></td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" rowspan="11" colspan="3" align="" valign="">
+<p><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><span style="font-weight: bold;">Legende</span></span></span></p>
+<p><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">- = Transliteration ins Kyrillische nicht möglich, da nicht standardisiert</span></span></p>
+<p><span style="font-size: small;"><span style="font-family: arial,helvetica,sans-serif;">(...) = nur Eingabe</span><br /></span></p>
+</td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ц</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">c</span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ч</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ch<br /></span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ш</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">sh</span></span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Щ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">shh</span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ъ</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ы</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y'</span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ь</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Э</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e'<br /></span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ю</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">yu<br /></span></strong></td>
+</tr>
+<tr>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Я</td>
+<td style="font-weight: bold; border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ya<br /></span></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="wissenschaftlich"></a>Wissenschaftliche Transliteration</span></h4>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Erweiterte Einstellungen:</strong> Ausgabe</span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Merkmale:</strong> Traditioneller Standard in wissenschaftlichen Arbeiten. Russisch-Kirchenslavisch (moderne Aussprache) und Altkirchenslavisch werden verschieden transliteriert (siehe erweiterte Einstellungen).</span></p>
+<table id="cyrtab" style="border: 1px solid #000000; text-align: left; font-family: Monomakh!important; width: 100%;" border="1" frame="border" rules="all" cellspacing="0" cellpadding="4">
+<tbody>
+<tr id="" style="padding: 2px; font-size: 12px;" lang="" dir="" align="center" valign="middle" bgcolor=""><th style="border: 1px solid #000000;" lang="" dir="" scope="col" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Modernes Russisch</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Transliteration</strong></span></span></th><th style="border: 1px solid #000000;" scope="col" rowspan="34" colspan="1"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"> </span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Vor 1918</strong><br /></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">А</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">І Ї</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Б</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѣ (Ꙓ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ě</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ě</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">В</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѳ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ḟ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ḟ </span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Г</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѵ (Ѷ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẏ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẏ<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Д</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="1" colspan="3" align="" valign=""> </td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Е</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+<th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Kirchenslavisch </strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ё</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ë</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙗ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ж</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ž</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">З</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙃ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">И</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѕ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">dz</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Й</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѹ (Ꙋ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u<br /> </span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">К</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѡ (Ѻ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ô</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ô</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"> [o]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Л</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Є</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">je</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">М</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѥ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">je</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Н</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѧ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ę</span></span></strong><span style="font-family: arial,helvetica,sans-serif;">, ẽ</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ę]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">О</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѩ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ję</span></span></strong><span style="font-family: arial,helvetica,sans-serif;">, yẽ</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ję]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">П</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѫ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ǫ</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;">, õ</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ǫ]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Р</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѭ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">jǫ</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;">, yõ</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [jǫ]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">С</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѯ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ks</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Т</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">t</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѱ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ps</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">У</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѿ (Ѿ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ôt</span></strong><span style="font-family: arial,helvetica,sans-serif;"> [ot]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ф</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ҁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">90</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Х</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">x</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">[ Щ ]</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">[št]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;">[št]</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ц</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">c<span style="font-weight: normal;"><br /></span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="10" colspan="3" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><span style="font-weight: bold;">Legende</span><br /></span></span>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><span style="font-weight: bold;">fett</span></span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Standard. Alternativ können kommagetrennte Buchstaben ohne weitere Einstellungen verwendet werden</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">(...)</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Variante desselben Buchstabens</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">[...]</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Kann in den erweiterten Einstellungen festgelegt werden</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">-</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Rücktransliteration ins Kyrillische nicht möglich</span></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ч</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">č</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ш</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">š</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Щ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">šč</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ъ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ы</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ь</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Э</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">è</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ю</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ju</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Я</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span><br /></span></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="alalc"></a>ALA-LC</span></h4>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><em><strong>Die Transliteration von ALA-LC nach Kyrillisch funktioniert nur mit den entsprechenden Sonderzeichen korrekt!</strong></em> Siehe <a href="http://www.loc.gov/catdir/cpso/romanization/russian.pdf">ALA-LC Romanization Tables</a>. Umgekehrt können bei der Konversion von Kyrillisch nach ALA-LC die diakritischen Zeichen in den erweiterten Einstellungen ausgeschaltet werden.<br /></span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Erweiterte Einstellungen:</strong> Ausgabe</span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Merkmale:</strong> Wissenschaftlicher Standard in den angelsächsischen Ländern. Anhand der erweiterten Einstellungen können Diakritika ausgeschaltet werden. Russisch-Kirchenslavisch (moderne Aussprache) und Altkirchenslavisch werden verschieden transliteriert (siehe erweiterte Einstellungen).</span></p>
+<table id="cyrtab" style="border: 1px solid #000000; text-align: left; font-family: Monomakh!important; width: 100%;" border="1" frame="border" rules="all" cellspacing="0" cellpadding="4">
+<tbody>
+<tr id="" style="padding: 2px; font-size: 12px;" lang="" dir="" align="center" valign="middle" bgcolor=""><th style="border: 1px solid #000000;" lang="" dir="" scope="col" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Modernes Russisch</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Transliteration</strong></span></span></th><th style="border: 1px solid #000000;" scope="col" rowspan="34" colspan="1"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"> </span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Vor 1918</strong><br /></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">А</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">І Ї</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ī</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Б</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѣ (Ꙓ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ě</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡e </span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">В</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѳ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ḟ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ḟ </span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Г</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѵ (Ѷ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẏ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ẏ<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Д</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="1" colspan="3" align="" valign=""> </td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Е</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+<th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Kirchenslavisch </strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ё</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ë</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙗ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡a</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ж</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">zh</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">З</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙃ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">И</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѕ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Й</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ĭ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѹ (Ꙋ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u<br /> </span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">К</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѡ (Ѻ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ō</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ō</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Л</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Є</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">М</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѥ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡e</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Н</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѧ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ę</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡a</span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ę]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">О</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѩ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡ę</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡a</span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;">[i͡ę]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">П</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѫ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ǫ</span><span style="font-weight: normal;"><br /></span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u</span></span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;"> [ǫ]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Р</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѭ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡ǫ</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡u</span></strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: normal;">[i͡ǫ]</span></span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">С</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѯ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k͡s<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Т</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">t</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѱ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p͡s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">У</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѿ (Ѿ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ō͡t</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ō͡t</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ф</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ҁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">90</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Х</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">kh</span></span></strong></td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="11" colspan="3" align="" valign=""><br /><span style="font-size: small;"><span style="font-family: Helvetica,Arial,sans-serif; font-weight: bold;">Legende</span><br /></span>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;"><span style="font-weight: bold;">fett</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;">= Standard. Alternativ können kommagetrennte Buchstaben ohne weitere Einstellungen verwendet werden</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;">(...)</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;">= Variante desselben Buchstabens</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;">[...]</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;">= Kann in den erweiterten Einstellungen festgelegt werden</span></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;">-</span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-size: small;">= Rücktransliteration ins Kyrillische nicht möglich</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ц</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">t͡s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ч</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ch<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ш</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">sh<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Щ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">shch<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ъ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ы</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ь</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Э</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ė</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ю</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡u</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Я</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i͡a</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><em> </em></p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="translit"></a>Translit<br /></span></h4>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Erweiterte Einstellungen:</strong> nicht möglich</span></p>
+<p style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><strong>Merkmale:</strong> Nur als Behelf empfohlen. Kein Standard im engeren Sinne, dagegen weit verbreitet. Verschiedene Varianten, keine diakritischen Zeichen. Kirchenslavisch wird ausschließlich nach moderner Aussprache als Russisch-Kirchenslavisch transliteriert.</span></p>
+<table id="cyrtab" style="border: 1px solid #000000; text-align: left; font-family: Monomakh!important; width: 100%;" border="1" frame="border" rules="all" cellspacing="0" cellpadding="2">
+<tbody>
+<tr id="" style="padding: 2px; font-size: 12px;" lang="" dir="" align="center" valign="middle" bgcolor=""><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Modernes Russisch</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col" rowspan="34" colspan="1"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"> </span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Vor 1918</strong><br /></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">А</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">a</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">І Ї</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Б</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">b</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѣ (Ꙓ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /></span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">e</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">В</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v, w<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">v</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѳ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /></span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">f</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Г</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">g</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѵ (Ѷ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Д</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">d</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="1" colspan="3" align="" valign=""> </td>
+</tr>
+<tr id="" lang="" dir="" align="center" valign="middle" bgcolor="">
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign="">Е</td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e, je, ye<br /></span></strong></td>
+<td id="" style="border: 1px solid #000000;" lang="" dir="" scope="" align="left" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+<th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Kirchenslavisch </strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Eingabe</strong></span></span></th><th style="border: 1px solid #000000;" scope="col"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><strong>Ausgabe</strong></span></span></th></tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ё</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">jo, yo, ö<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">jo<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙗ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span><br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ж</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">zh</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">zh</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">З</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">z</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ꙃ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">И</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">i</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѕ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Й</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span><br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѹ (Ꙋ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u<br /> </span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">К</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">k</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѡ (Ѻ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">o</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Л</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">l</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Є</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">М</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">m</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѥ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-<br /> </span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">je</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Н</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">n</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѧ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">О</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">o</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѩ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">П</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">p</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѫ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Р</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">r</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѭ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">-</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">u</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">С</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">s</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѯ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ks</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Т</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">t</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">t</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѱ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ps</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">У</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">u</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ѿ (Ѿ)</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">ot</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ф</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">f</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ҁ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">-</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">90</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Х</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">h, x, kh<br /></span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">h</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""> </td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""> </td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""> </td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ц</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">c</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">c</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" rowspan="10" colspan="3" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;"><span style="font-weight: bold;">Legende</span><br /></span></span>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">-</span></span></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: small;">= Rücktransliteration ins Kyrillische nicht möglich</span></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ч</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ch</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ch</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ш</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">sh</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">sh</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Щ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">shch</span></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">shch</span></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ъ</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">"</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ы</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">y</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ь</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">'</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Э</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e', ä<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;">e'<br /></span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Ю</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ju</span>, yu, ü<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">j</span>u</span></strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign="">Я</td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span>, ya, q<br /></span></strong></td>
+<td style="border: 1px solid #000000;" lang="" dir="" scope="" align="" valign=""><strong><span style="font-family: arial,helvetica,sans-serif;"><span style="font-weight: bold;">ja</span><br /></span></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<h4 style="text-align: justify;"><a name="duden"></a>Duden</h4>
+<p style="text-align: justify;">Die Duden-Transliteration gilt in den deutschsprachigen Ländern als nicht-wissenschaftlicher Standard für die Transliteration des Russischen. Die verschiedenen Teile der Transliteration werden in der Öffentlichkeit aber regelmäßig und auf verschiedene Weise missachtet, zum Teil aus guten Gründen. Die verschiedenen Sonderregeln können <span style="font-family: arial,helvetica,sans-serif;">daher einzeln in den erweiterten Einstellungen ausgeschaltet werden.<br /></span></p>
+<h4 style="text-align: justify;"><span style="font-family: arial,helvetica,sans-serif;"><a name="sprognaevn"></a>Dansk Sprognævn</span></h4>
+<p style="text-align: justify;"><span>Der dänische Standard für die nicht-wissenschaftliche Transliteration des Russischen wird vom Dansk Sprognævn, dem <span style="display: inline;">dänischen Institut für die Pflege der Muttersprache, festgelegt. In den erweiterten Einstellungen können die Ungenauigkeiten des Standards bei Bedarf teilweise beseitigt werden: Die Transliteration für </span><em>ж</em> kann auf <em>zj </em>umgeschaltet werden (anstatt des standardmäßigen <em>sj</em>, das bereits für <em>ш</em> verwendet wird).</span></p>
+<h4 style="text-align: justify;"><a name="feedback"></a>Fragen & Feedback</h4>
+<p>Bitte eine <a href="https://github.com/pod-o-mart/CyrAcademisator-RU/issues">Anfrage auf Github</a> stellen.</p>
+</div>
+
+
+</body>
+</html>
