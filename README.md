@@ -6,7 +6,7 @@ This transiteration tool was initially published in 2010 on [podolak.net](https:
 
 The code was my first step into PHP. Although it is quite messy and there is much trash left from disused functions, it works without problems. The recent years there were no complaints on wrong transliterations, the different transliteration styles seem to be in order.
 
-You might have a look at the [documentation](https://pod-o-mart.github.io/documentation/english.php).
+You might have a look at the [documentation](https://pod-o-mart.github.io/documentation/english.html).
 
 ## Installation
 Just copy all files to a folder on your server/webspace and point to it with your browser. The script is ready-to-go.
