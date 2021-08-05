@@ -1,5 +1,7 @@
 # CyrAcademisator-RU
-Academic transliteration for Russian
+[![DOI](https://zenodo.org/badge/392112962.svg)](https://zenodo.org/badge/latestdoi/392112962)
+
+Tool for academic transliteration of Russian text. Supports the transliteration styles ISO R/9, ISO 9 / GOST 7.79A, GOST 7.79B, ALA-LC, BGN/PCGN, British Standard, Duden and Dansk Sprognævn.
 
 ## About
 This transiteration tool was initially published in 2010 on [podolak.net](https://podolak.net/en/transliteration/russian) and later on the [Danish Portal for Slavonic, Balkan and East European Studies](https://oesteuropastudier.dk/en/tools/transliteration/russian). As I do not have the ressources to maintain the code anymore, I have decided to publish the code to anyone under the [CC BY-NC-SA 4.0](https://github.com/pod-o-mart/CyrAcademisator-RU/blob/main/LICENCE.md)-licence.
